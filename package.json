@@ -1,6 +1,6 @@
 {
   "name": "xlkang-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "小型node脚手架",
   "main": "index.js",
   "bin": "cli.js",
