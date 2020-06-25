@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#!/usr/bin/env node
 
 const path = require('path');
 const fs = require('fs')
@@ -19,7 +19,7 @@ inquirer.prompt([
     fs.readdir(tmplDir, (err, files)=>{
         if(err) throw err;
         files.forEach(file => {
-            ejs.renderFile(path.join(templDir, file), answers, (err, result) => {
+            ejs.renderFile(path.join(tmplDir, file), answers, (err, result) => {
                 if(err) throw err;
                 fs.writeFileSync(path.join(destDir, file), result)
             })
